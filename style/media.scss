@@ -1,0 +1,15 @@
+@media only screen and (max-width: 751px) {
+  .site-header{
+    .header-items{
+      .span{
+        display: none;
+      }
+      .menu-header{
+        display: flex !important;
+      }
+      .btn-header, .number-header{
+        display: none;
+      }
+    }
+  }
+}
