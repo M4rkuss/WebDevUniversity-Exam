@@ -26,17 +26,10 @@ $(document).ready(() => {
     ]
   })
 
+  document.querySelector('.news-btn').addEventListener('click', () => {
+    document.querySelector('.full-news').classList.toggle('.add-class');
+  });
 
-  let cookieSeen = localStorage.getItem('cookie_seen');
-
-  if (cookieSeen) {
-    $('#cookie-info').remove();
-  } else {
-    $('#cookie-info').fadeIn();
-  }
-
-  let current_year = new Date().getFullYear();
-  $('#current-year').html(current_year);
 
   if ($(window).width() < 767) {
     $('#order-profiles').attr('placeholder','');
